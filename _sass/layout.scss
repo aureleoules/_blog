@@ -2,7 +2,7 @@
 
 /* Navigation */
 
-#nav, #nav-left { 
+#nav, #nav-left {
   a {
     display: block;
     color: $background-color;
@@ -252,4 +252,7 @@ footer {
   color: $background-color;
   text-align: center;
   padding: 0.6667em 0;
+  position:absolute;
+  bottom: 0;
+  width: 100%;
 }
