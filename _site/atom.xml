@@ -4,7 +4,7 @@
  <title>Blog</title>
  <link href="http://aurele.oules.com/blog/atom.xml" rel="self"/>
  <id>http://aurele.oules.com/blog</id>
- <updated>2016-10-23T18:06:51+02:00</updated>
+ <updated>2016-10-24T04:08:49+02:00</updated>
  <author>
    <name>Aurèle Oulès</name>
    <uri>http://aurele.oules.com</uri>
@@ -14,12 +14,22 @@
  
 
  <entry>
-   <title>Hello World</title>
-   <link href="http://aurele.oules.com/blog/hello-world"/>
-   <id>http://aurele.oules.com/blog/hello-world</id>
-   <updated>2016-10-23T00:00:00+02:00</updated>
-   <content type="html">&lt;p&gt;This is my first post on this Blog!!! Woaw much fun.&lt;/p&gt;
+   <title>Setup AngularJS</title>
+   <link href="http://aurele.oules.com/blog/setup-angular"/>
+   <id>http://aurele.oules.com/blog/setup-angular</id>
+   <updated>2016-10-24T00:00:00+02:00</updated>
+   <content type="html">&lt;p&gt;First you need…&lt;/p&gt;
 </content>
+ </entry>
+
+ 
+
+ <entry>
+   <title>Introduction to AngularJS</title>
+   <link href="http://aurele.oules.com/blog/introduction-to-angular"/>
+   <id>http://aurele.oules.com/blog/introduction-to-angular</id>
+   <updated>2016-10-24T00:00:00+02:00</updated>
+   <content type="html">&lt;h2 id=&quot;what-is-angular-&quot;&gt;What is Angular ?&lt;/h2&gt; &lt;p&gt;AngularJS is a &lt;b&gt;powerful open source JavaScript framework&lt;/b&gt; for web applications. It was originally developed in 2009 by Misko Hevery and Adam Abrons. It is now maintained by Google.&lt;/p&gt; &lt;h2 id=&quot;advantages&quot;&gt;Advantages&lt;/h2&gt; &lt;ul&gt; &lt;li&gt;AngularJS allows you to use &lt;b&gt;MVC&lt;/b&gt; (Model View Controller), which means you can...</content>
  </entry>
 
  

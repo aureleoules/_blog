@@ -158,6 +158,7 @@
   @media (min-width: 940px) {
       margin-bottom: 1.3334em;
     }
+    padding-bottom: 50px;
 }
 
 .post+.post:before {
@@ -225,6 +226,7 @@ code {
 .pagination {
   text-align: center;
   margin: 2.666668em;
+
   span {
     background-color: darken($background-color, 5%);
     color: $text-color;
@@ -252,7 +254,8 @@ footer {
   color: $background-color;
   text-align: center;
   padding: 0.6667em 0;
-  position:absolute;
+  position: fixed;
   bottom: 0;
+
   width: 100%;
 }
