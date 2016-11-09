@@ -4,7 +4,7 @@
  <title>Blog</title>
  <link href="http://aurele.oules.com/blog/atom.xml" rel="self"/>
  <id>http://aurele.oules.com/blog</id>
- <updated>2016-10-24T04:12:00+02:00</updated>
+ <updated>2016-11-09T21:19:58+01:00</updated>
  <author>
    <name>Aurèle Oulès</name>
    <uri>http://aurele.oules.com</uri>
@@ -18,8 +18,7 @@
    <link href="http://aurele.oules.com/blog/setup-angular"/>
    <id>http://aurele.oules.com/blog/setup-angular</id>
    <updated>2016-10-24T00:00:00+02:00</updated>
-   <content type="html">&lt;p&gt;First you need…&lt;/p&gt;
-</content>
+   <content type="html">&lt;h2 id=&quot;download-angularjs&quot;&gt;Download AngularJS&lt;/h2&gt; &lt;p&gt;There are multiple ways to download and use &lt;strong&gt;AngularJS&lt;/strong&gt;.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;You can use the &lt;a href=&quot;https://developers.google.com/speed/libraries/#angularjs&quot;&gt;Google CDN&lt;/a&gt; using:&lt;/li&gt; &lt;/ul&gt; &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;table style=&quot;border-spacing: 0&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter gl&quot; style=&quot;text-align: right&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1 2 3 4 5 6 7 8 9 10&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!DOCTYPE HTML&amp;gt;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;&amp;lt;html&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;ng-app=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;myApp&quot;&lt;/span&gt;&lt;span...</content>
  </entry>
 
  

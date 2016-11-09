@@ -352,7 +352,8 @@ img[title="Emerald"] {
 
 code {
   color: #7b7b7b;
-  background-color: white; }
+  background-color: white;
+  font-size: 14px; }
 
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
 .content ul, .content ol {
@@ -403,6 +404,9 @@ footer {
  * A Github stylesheet to highlight code snippet
  * https://github.com/mojombo/tpw/blob/master/css/syntax.css
  */
+.highlight {
+  font-size: 14px; }
+
 .lineno {
   color: #bdbdbd;
   margin-right: 1em; }

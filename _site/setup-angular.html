@@ -46,7 +46,118 @@
 	<time datetime="2016-10-24T00:00:00+02:00" class="by-line">24 Oct 2016</time>
 	<div class="content">
 
-		<p>First you need…</p>
+		<h2 id="download-angularjs">Download AngularJS</h2>
+
+<p>There are multiple ways to download and use <strong>AngularJS</strong>.</p>
+
+<ul>
+  <li>You can use the <a href="https://developers.google.com/speed/libraries/#angularjs">Google CDN</a> using:</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">ng-app=</span><span class="s">"myApp"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>AngularJS App<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    ...
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p><strong>Note</strong> that only versions 1.0.1 and above are available on the <strong>CDN</strong>. If you need an earlier version (which you <strong>shouldn’t</strong>) you can use the <a href="https://code.angularjs.org/">https://code.angularjs.org/</a> URL, which was the previous recommended location for hosted code source. If you’re still using the Angular server you should switch to the CDN version for even faster loading times.</p>
+
+<ul>
+  <li>Using <strong>Bower</strong>:<br />
+<code>bower install angular</code><br />
+Or use a <strong>specific version</strong> of Angular:<br />
+<code>bower install angular#1.2.0</code></li>
+  <li>Using <strong>GitHub</strong>:<br />
+<code>git clone -b master https://github.com/angular/angular.js.git</code></li>
+  <li>Using <strong>NPM</strong>:<br />
+<code>npm install angular</code></li>
+</ul>
+
+<h2 id="quick-example">Quick example:</h2>
+
+<p>Make a simple HTML page including the <strong>AngularJS library and a JavaScript file</strong> called <code>app.js</code> like:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Simple App<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"app.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p><strong>Then</strong> add to the <code>&lt;html&gt;</code> tag: “<strong>ng-app=”myApp”</strong>.</p>
+
+<p>In your <code>app.js</code> file, write the following:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4</pre></td><td class="code"><pre><span class="kd">var</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">angular</span><span class="p">.</span><span class="nx">module</span><span class="p">(</span><span class="s1">'myApp'</span><span class="p">,</span> <span class="p">[]);</span>
+<span class="nx">app</span><span class="p">.</span><span class="nx">controller</span><span class="p">(</span><span class="s1">'myCtrl'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">$scope</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$scope</span><span class="p">.</span><span class="nx">myText</span> <span class="o">=</span> <span class="s2">"Hello World!"</span><span class="p">;</span>
+<span class="p">});</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p><strong>Go back</strong> to your html file and add to the <code>&lt;body&gt;</code> tag :<br />
+<code>ng-controller="myCtrl"</code>.<br />
+And in your body add a <code>&lt;h1&gt;{{ myText }}&lt;/h1&gt;</code>.</p>
+
+<p>It should looks like this:</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</pre></td><td class="code"><pre><span class="cp">&lt;!DOCTYPE HTML&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;title&gt;</span>Simple App<span class="nt">&lt;/title&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+        <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"app.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    <span class="nt">&lt;body</span> <span class="na">ng-controller=</span><span class="s">"myCtrl"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>{{ myText }}<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span><span class="w">
+</span></pre></td></tr></tbody></table></code></pre></figure>
+
+<p><strong>Now</strong> open your html file and admire a wonderful :</p>
+
+<h1 id="hello-world">Hello World!</h1>
 
 
 	</div>
