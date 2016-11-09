@@ -1,7 +1,7 @@
 ---
 title: Setup AngularJS
 ---
-##Download AngularJS  
+## Download AngularJS  
 
 There are multiple ways to download and use **AngularJS**.  
 
@@ -32,7 +32,7 @@ Or use a **specific version** of Angular:
 - Using **NPM**:  
 <code>npm install angular</code>  
 
-##Quick example:  
+## Quick example:  
 
 Make a simple HTML page including the **AngularJS library and a JavaScript file** called <code>app.js</code> like:  
 
@@ -80,4 +80,4 @@ It should looks like this:
 
 **Now** open your html file and admire a wonderful :  
 
-#Hello World!
+# Hello World!
